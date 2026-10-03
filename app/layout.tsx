@@ -7,9 +7,9 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const fraunces = Fraunces({ subsets: ['latin'], variable: '--font-fraunces' })
 
 export const metadata: Metadata = {
-  title: 'T-Shaped Marketer | Analytics, Brand & Artisan Commerce',
+  title: 'Andre Yeampierre | Digital Strategist & Marketing Analyst',
   description:
-    'Marketing analytics professional with an M.S. from WGU, Southern California radio experience, e-commerce entrepreneurship, Puerto Rico–certified artisan craft production, HubSpot and Parker Dewey experience, and AI marketing training.',
+    'Andre Yeampierre is a T-shaped digital strategist in Cabo Rojo, Puerto Rico with an M.S. in Marketing from WGU, HubSpot and Parker Dewey experience, AI and data analysis certifications, Southern California radio roots, and a Fomento-certified artisan brand, ArtesanoBonafide.com.',
   generator: 'v0.app',
   icons: {
     icon: [

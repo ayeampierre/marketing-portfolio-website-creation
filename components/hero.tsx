@@ -1,13 +1,6 @@
 import Image from 'next/image'
-import { ArrowDown, BarChart3 } from 'lucide-react'
-import { profile } from '@/lib/profile'
-
-const stats = [
-  { value: 'M.S.', label: 'WGU graduate' },
-  { value: 'HubSpot', label: 'Intern & certified' },
-  { value: 'SoCal', label: 'Radio experience' },
-  { value: 'PR', label: 'Certified artisan' },
-]
+import { ArrowDown, ArrowUpRight, BarChart3 } from 'lucide-react'
+import { profile, stats } from '@/lib/profile'
 
 export function Hero() {
   return (
@@ -23,7 +16,7 @@ export function Hero() {
           </h1>
           <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
             {
-              "I'm a T-shaped marketer who turns data into decisions. My deep expertise is marketing analytics, built on a broad foundation of radio broadcasting, e-commerce entrepreneurship, artisan product creation and years of serving customers face to face."
+              "I'm Andre Yeampierre, a T-shaped digital strategist and e-commerce operator. I use marketing analytics, AI tools and digital media to drive audience engagement, building on a career that runs from Southern California radio to founding a certified artisan brand in Puerto Rico."
             }
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -35,10 +28,13 @@ export function Hero() {
               <ArrowDown className="size-4" aria-hidden="true" />
             </a>
             <a
-              href="#contact"
-              className="inline-flex items-center rounded-full border border-foreground/20 px-6 py-3 text-sm font-medium transition-colors hover:bg-secondary"
+              href={profile.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-foreground/20 px-6 py-3 text-sm font-medium transition-colors hover:bg-secondary"
             >
-              Get in touch
+              Connect on LinkedIn
+              <ArrowUpRight className="size-4" aria-hidden="true" />
             </a>
           </div>
         </div>

@@ -17,8 +17,9 @@ export function Experience() {
             key={item.role + item.org}
             className="flex flex-col rounded-2xl border border-border bg-card p-6 transition-shadow hover:shadow-md"
           >
-            <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
-              {item.place}
+            <p className="flex flex-wrap items-center justify-between gap-2 text-xs font-medium uppercase tracking-widest text-muted-foreground">
+              <span>{item.period}</span>
+              <span>{item.place}</span>
             </p>
             <h3 className="mt-3 font-serif text-2xl font-semibold">{item.role}</h3>
             <p className="text-sm font-medium text-primary">{item.org}</p>

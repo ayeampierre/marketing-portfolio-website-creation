@@ -16,7 +16,7 @@ export function SiteHeader() {
             aria-hidden="true"
             className="flex size-8 items-center justify-center rounded-full bg-primary text-sm text-primary-foreground"
           >
-            T
+            {profile.initials}
           </span>
           <span>{profile.name}</span>
         </a>
